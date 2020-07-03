@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="ru">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="overlay hidden"></div>
+        <div class="game">
+            <p class="nameOfTheGame">Memoji</p>
+            <div class="wrapper">
+                <main class="playingField">
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="card card-hidden"><span class="emoji hidden"></span></div>
+                    <div class="window hidden">
+                        <span class="result"></span>
+                        <button class="reset">Play again</button>
+                    </div>
+                </main>
+            </div>
+            <div class="timer">
+                <span class="minutes"></span>:<span class="seconds"></span>
+            </div>
+        </div>
+        <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+        <script defer src="script.js"></script>
+    </body>
+</html>

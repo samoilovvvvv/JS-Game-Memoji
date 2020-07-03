@@ -1,0 +1,174 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background-color: #cfd0cf;
+  border-top: 1px solid #cfd0cf;
+}
+
+.hidden {
+  display: none;
+}
+
+.nameOfTheGame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  line-height: 47px;
+  font: 42px Arial;
+  font-weight: bold;
+  color: #434344;
+}
+
+.wrapper {
+  margin-left: 25px;
+}
+
+.wrapper .playingField {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 660px;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.wrapper .playingField .card-hidden {
+  background: -webkit-gradient(linear, left bottom, right top, from(#22AB93), to(#19668D));
+  background: linear-gradient(to top right, #22AB93, #19668D);
+}
+
+.wrapper .playingField .card-view {
+  background-color: white;
+}
+
+.wrapper .playingField span.emoji {
+  position: absolute;
+  left: 10%;
+  top: 8%;
+}
+
+.wrapper .playingField .success {
+  background-color: #5AD66F;
+}
+
+.wrapper .playingField .fail {
+  background-color: #f44336;
+}
+
+.wrapper .playingField .not-active {
+  pointer-events: none;
+}
+
+.card {
+  cursor: pointer !important;
+  width: 130px;
+  height: 130px;
+  border: 5px solid white;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-radius: 9px;
+  -webkit-box-shadow: 1px 1px 5px 50% black;
+          box-shadow: 1px 1px 5px 50% black;
+  font-size: 75px;
+  position: relative;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
+}
+
+.timer {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: 32px Arial;
+  font-weight: bold;
+  color: #434344;
+}
+
+.window {
+  position: absolute;
+  min-width: 350px;
+  top: 20px;
+  margin-bottom: 30px;
+  background-color: white;
+  padding-bottom: 30px;
+  left: 142.5px;
+  top: 126px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.window .result {
+  color: #434344;
+  font: 48px Arial;
+  font-weight: bold;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.window .reset {
+  height: 40px;
+  display: block;
+  width: 35%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font: 20px Arial;
+  color: white;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, right top, from(#22AB93), to(#19668D));
+  background: linear-gradient(to top right, #22AB93, #19668D);
+  border: none;
+  -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
+  outline: none;
+}
+
+.window .reset:active {
+  -webkit-box-shadow: 2px 1px 8px black inset;
+          box-shadow: 2px 1px 8px black inset;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  opacity: 0;
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */

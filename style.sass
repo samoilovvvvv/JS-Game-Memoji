@@ -1,0 +1,127 @@
+html,
+body
+    margin: 0
+    padding: 0
+    user-select: none
+
+body
+    background-color: #cfd0cf
+    border-top: 1px solid #cfd0cf
+
+.hidden
+    display: none
+
+.nameOfTheGame
+    display: flex
+    justify-content: center
+    margin-top: 40px
+    line-height: 47px
+    font: 42px Arial
+    font-weight: bold;
+    color: #434344
+
+.wrapper
+    margin-left: 25px
+
+    .playingField
+        margin-top: 40px
+        display: flex
+        flex-wrap: wrap
+        width: 660px
+        margin: auto
+        justify-content: center
+        position: relative      
+
+        .card-hidden
+            background: linear-gradient(to top right, #22AB93, #19668D)
+
+        .card-view
+            background-color: white
+
+        span.emoji
+            position: absolute
+            left: 10%
+            top: 8%
+
+        .success
+            background-color: #5AD66F
+
+        .fail
+            background-color: #f44336
+
+        .not-active
+            pointer-events: none
+
+.card
+    cursor: pointer !important
+    width: 130px
+    height: 130px
+    border: 5px solid white
+    margin-right: 25px
+    margin-bottom: 25px
+    border-radius: 9px
+    box-shadow: 1px 1px 5px 50% black
+    font-size: 75px
+    position: relative
+    perspective: 600px
+    transition: transform .7s 
+
+.timer
+    margin-top: 30px
+    display: flex
+    justify-content: center
+    font: 32px Arial
+    font-weight: bold
+    color: #434344
+
+.window
+    position: absolute
+    min-width: 350px
+    top: 20px
+    margin-bottom: 30px
+    background-color: white
+    padding-bottom: 30px
+    left: 142.5px
+    top: 126px
+    opacity: 0
+    z-index: 2
+    
+
+    .result
+        color: #434344
+        font: 48px Arial
+        font-weight: bold
+        display: block
+        margin-top: 30px
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        justify-content: center
+        margin-bottom: 40px
+        
+
+    .reset
+        height: 40px
+        display: block
+        width: 35%
+        border-radius: 10px
+        margin-left: auto
+        margin-right: auto
+        font: 20px Arial
+        color: white
+        font-weight: bold
+        background: linear-gradient(to top right, #22AB93, #19668D)
+        border: none
+        box-shadow: 1px 1px 1px black
+        outline: none
+
+    .reset:active
+        box-shadow: 2px 1px 8px black inset
+
+.overlay
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 1
+    opacity: 0
+    background-color: black
