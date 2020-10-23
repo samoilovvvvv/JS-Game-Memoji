@@ -42,7 +42,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 660px;
+  min-width: 300px;
+  max-width: 660px;
   margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
